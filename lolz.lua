@@ -1557,10 +1557,10 @@ function RayfieldLibrary:CreateWindow(Settings)
 	LoadingFrame.Subtitle.TextTransparency = 1
 
 	LoadingFrame.Version.TextTransparency = 1
-	LoadingFrame.Title.Text = Settings.LoadingTitle or "Aeolus"
-	LoadingFrame.Subtitle.Text = Settings.LoadingSubtitle or "Interface Suite"
+	LoadingFrame.Title.Text = "Aeolus Production Present"
+	LoadingFrame.Subtitle.Text = "Loading..."
 
-	if Settings.LoadingTitle ~= "Rayfield Interface Suite" then
+	if Settings.LoadingTitle ~= "Aeolus Interface Suite" then
 		LoadingFrame.Version.Text = "Aeolus UI"
 	end
 
