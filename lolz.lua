@@ -10,7 +10,7 @@
 ]]
 
 if debugX then
-	warn('Initialising Rayfield')
+	warn('Initialising Aeolus Interface Suite')
 end
 
 local function getService(name)
@@ -3924,6 +3924,8 @@ end)
 
 if LoadingFrame:FindFirstChild("Image") then
     LoadingFrame.Image.Visible = false -- Hides the image
+    -- Alternatively, make it fully transparent:
+    LoadingFrame.Image.ImageTransparency = 1
 end
 
 return RayfieldLibrary
