@@ -3922,4 +3922,8 @@ task.delay(4, function()
 	end
 end)
 
+if LoadingFrame:FindFirstChild("Image") then
+    LoadingFrame.Image.Visible = false -- Hides the image
+end
+
 return RayfieldLibrary
