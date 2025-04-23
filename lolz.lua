@@ -1524,7 +1524,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 	if Rayfield:FindFirstChild('Loading') then
 		if getgenv and not getgenv().rayfieldCached then
 			Rayfield.Enabled = true
-			Rayfield.Loading.Visible = false
+			Rayfield.Loading.Visible = true
 
 			task.wait(1.4)
 			Rayfield.Loading.Visible = false
@@ -1604,7 +1604,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 
 	Topbar.Visible = false
 	Elements.Visible = false
-	LoadingFrame.Visible = true
+	LoadingFrame.Visible = false
 
 	if not Settings.DisableRayfieldPrompts then
 		task.spawn(function()
